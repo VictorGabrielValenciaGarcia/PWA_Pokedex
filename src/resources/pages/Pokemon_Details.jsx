@@ -79,7 +79,7 @@ function PokeData() {
           />
           
           {/* Shadow */}
-          <div className="absolute inset-0 z-10 flex items-center justify-center top-14">
+          <div className="relative inset-0 z-10 flex items-center justify-center -top-16">
             <div 
               className="w-40 h-5 bg-slate-600 blur-lg" 
               style={{
@@ -108,7 +108,7 @@ function PokeData() {
         </div>
         
         {/* Data */}
-        <div className='w-full sm:col-span-2'>
+        <div className='w-full sm:col-span-3'>
 
           {/* Stats */}
           <div className="w-full p-5 bg-white shadow-xl rounded-xl">
