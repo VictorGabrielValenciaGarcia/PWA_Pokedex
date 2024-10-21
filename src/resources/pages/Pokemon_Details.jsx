@@ -6,11 +6,16 @@ import axios from 'axios';
 import getColorForType from '../shared/PokemonTypes';
 
 function PokeData() {
+  
   const { name } = useParams(); // Obtiene el parámetro de la URL
   const [pokemon, setPokemon] = useState(null); // Guarda los datos del Pokémon
   const [loading, setLoading] = useState(true); // Controla el estado de carga
   const [error, setError] = useState(null); // Maneja errores
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+  
   useEffect(() => {
     const fetchPokemon = async () => {
       try {
