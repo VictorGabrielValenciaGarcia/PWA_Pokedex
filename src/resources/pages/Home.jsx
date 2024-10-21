@@ -13,11 +13,7 @@ const Home = () => {
     const fetchPokemon = async () => {
       try {
 
-        const min = 1;
-        const max = 50;
-        const rand = min + Math.random() * (max - min);
-
-        const response = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=${rand}`);
+        const response = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=${50}`);
         const pokemonData = await Promise.all(
           response.data.results.map(async (poke) => {
             const pokeDetails = await axios.get(poke.url);

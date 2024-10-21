@@ -81,7 +81,7 @@ function PokeData() {
           {/* Shadow */}
           <div className="relative inset-0 z-10 flex items-center justify-center -top-16">
             <div 
-              className="w-40 h-5 bg-slate-600 blur-lg" 
+              className="w-48 h-5 bg-slate-600 blur-lg" 
               style={{
                 borderRadius: '50% / 100%',
               }}
